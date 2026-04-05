@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Driver.js tour overrides ─────────────────────────────────────────────── */
+.lore-tour-popover {
+  font-family: 'Inter', sans-serif !important;
+  border-radius: 14px !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.08) !important;
+  max-width: 320px !important;
+}
+
+.lore-tour-popover .driver-popover-title {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  margin-bottom: 6px !important;
+}
+
+.lore-tour-popover .driver-popover-description {
+  font-size: 13px !important;
+  color: #475569 !important;
+  line-height: 1.6 !important;
+}
+
+.lore-tour-popover .driver-popover-footer {
+  margin-top: 14px !important;
+  padding-top: 12px !important;
+  border-top: 1px solid #f1f5f9 !important;
+}
+
+.lore-tour-popover .driver-popover-next-btn {
+  background: #059669 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  padding: 6px 14px !important;
+  color: white !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  letter-spacing: normal !important;
+}
+
+.lore-tour-popover .driver-popover-next-btn:hover {
+  background: #047857 !important;
+  text-shadow: none !important;
+}
+
+.lore-tour-popover .driver-popover-prev-btn {
+  background: transparent !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  padding: 6px 14px !important;
+  color: #64748b !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  letter-spacing: normal !important;
+}
+
+.lore-tour-popover .driver-popover-prev-btn:hover {
+  background: #f8fafc !important;
+  text-shadow: none !important;
+}
+
+.lore-tour-popover .driver-popover-close-btn {
+  color: #94a3b8 !important;
+  font-size: 18px !important;
+  text-shadow: none !important;
+}
+
+.lore-tour-popover .driver-popover-progress-text {
+  font-size: 11px !important;
+  color: #94a3b8 !important;
+  font-weight: 500 !important;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #0f172a;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 2px; }
+
+.typing-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #059669;
+  animation: bounce 1.2s infinite;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+  0%, 60%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-5px); }
+}
