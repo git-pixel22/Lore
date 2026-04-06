@@ -1,8 +1,8 @@
-# Lore
+# LoRe
 
 **Institutional knowledge graph for engineering teams.**
 
-Lore ingests raw team artifacts (Slack threads, incident reports, PR comments, meeting notes) and lets engineers ask *why* the codebase looks the way it does. Instead of a keyword search, you get the full causal decision chain: what incident forced a change, what alternatives were evaluated and rejected, and what constraints still apply today.
+LoRe ingests raw team artifacts (Slack threads, incident reports, PR comments, meeting notes) and lets engineers ask *why* the codebase looks the way it does. Instead of a keyword search, you get the full causal decision chain: what incident forced a change, what alternatives were evaluated and rejected, and what constraints still apply today.
 
 Built for the [HydraDB Hack Day](https://hydradb.com/), powered by HydraDB's `infer` + `graph_context` APIs and Groq's LLaMA 3.3 70B.
 
@@ -20,7 +20,7 @@ The answers exist scattered across old Slack threads, incident post-mortems, ADR
 
 ---
 
-## What Lore Does
+## What LoRe Does
 
 1. **Ingests** team artifacts into HydraDB with `infer:true`, which extracts structured facts from raw conversational text.
 2. **Connects** artifacts using `graph_context:true`, which traverses causal relationships rather than doing simple similarity search.
